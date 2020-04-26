@@ -1,11 +1,11 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
+// import Form from 'react-bootstrap/Form'
+// import Button from 'react-bootstrap/Button'
 
 const HabitTable = (props) => {
   var daysList = []
-  for (var i = 1; i <= 31; i++) {
+  for (let i = 1; i <= 31; i++) {
     daysList.push(
       <th>
         <center>{i}</center>
@@ -14,7 +14,7 @@ const HabitTable = (props) => {
   }
 
   var tableRow = []
-  for (var num = 1; num <= daysList.length + 2; num++) {
+  for (let num = 1; num <= daysList.length + 2; num++) {
     tableRow.push(<td></td>)
   }
 
@@ -34,10 +34,6 @@ const HabitTable = (props) => {
 
   return (
     <>
-      <h3>
-        {' '}
-        <center>Habit Tracker</center>
-      </h3>
       <Table bordered hover size='sm'>
         <thead>
           <tr>
@@ -57,6 +53,5 @@ const HabitTable = (props) => {
     </>
   )
 }
-
 
 export default HabitTable

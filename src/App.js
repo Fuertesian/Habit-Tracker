@@ -1,11 +1,9 @@
-import React from "react"
-import "./App.css"
-import MonthlyHabitTracker from "./containers/MonthlyHabitTracker"
-import HabitTable from "./containers/HabitTable"
+import React from 'react'
+import './App.css'
+import MonthlyHabitTracker from './containers/MonthlyHabitTracker'
 
 function App() {
-  return (<MonthlyHabitTracker />, <HabitTable />)
-
+  return <MonthlyHabitTracker />
 }
 
 export default App
