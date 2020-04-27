@@ -3,6 +3,7 @@ import Table from 'react-bootstrap/Table'
 import TableHeader from '../components/MonthlyHabitTrackerComponents/TableHeader/TableHeader'
 import HabitNames from '../components/MonthlyHabitTrackerComponents/HabitNames/HabitNames'
 import Days from '../components/MonthlyHabitTrackerComponents/Days/Days'
+import SuccessTracker from '../components/MonthlyHabitTrackerComponents/SuccessTracker/SuccessTracker'
 
 const HabitTable = (props) => {
 
@@ -20,6 +21,9 @@ const HabitTable = (props) => {
               <HabitNames />
             </td>
             <Days />
+            <td>
+              <SuccessTracker />
+            </td>
           </tr>
         </tbody>
       </Table>
