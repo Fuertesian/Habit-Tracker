@@ -1,40 +1,23 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
-import Days from '../components/MonthlyHabitTrackerComponents/Days/Days'
+import TableHeader from '../components/MonthlyHabitTrackerComponents/TableHeader/TableHeader'
 
 const HabitTable = (props) => {
-  let daysList = <Days />
-
-  let tableRow = []
-  for (let num = 1; num <= daysList.length + 2; num++) {
-    tableRow.push(<td></td>)
-  }
-
-  for (let i = 1; i <= 33; i++) {
-    tableRow[i] = <td></td>
-  }
 
   return (
-    <>
+    <div style={{ textAlign: 'center' }}>
       <Table bordered hover size='sm'>
         <thead>
           <tr>
-            <th>
-              <center>Habits</center>
-            </th>
-            {daysList}
-            <th>
-              <center>Success %</center>
-            </th>
+            <TableHeader />
           </tr>
         </thead>
         <tbody>
-          <tr>{tableRow}</tr>
+          <tr></tr>
         </tbody>
       </Table>
-    </>
+    </div>
   )
 }
-
 
 export default HabitTable
