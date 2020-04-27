@@ -1,6 +1,10 @@
 import React from 'react'
 
 const SuccessTracker = () => {
-  return <></>
+  return (
+  <>
+    {'Null'}
+  </>
+  )
 }
 export default SuccessTracker
