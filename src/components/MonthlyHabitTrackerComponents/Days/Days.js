@@ -1,11 +1,11 @@
 import React from 'react'
 const Days = (props) => {
-  let daysList = []
+  let daysRowList = []
   for (let i = 1; i <= 31; i++) {
-    daysList.push(<th key={i}>{i}</th>)
+    daysRowList.push(<td key={i}></td>)
   }
 
-  return daysList
+  return daysRowList
 }
 
 export default Days
