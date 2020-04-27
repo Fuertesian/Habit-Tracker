@@ -1,6 +1,7 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
 import TableHeader from '../components/MonthlyHabitTrackerComponents/TableHeader/TableHeader'
+import HabitNames from '../components/MonthlyHabitTrackerComponents/HabitNames/HabitNames'
 
 const HabitTable = (props) => {
 
@@ -13,7 +14,11 @@ const HabitTable = (props) => {
           </tr>
         </thead>
         <tbody>
-          <tr></tr>
+          <tr>
+            <td>
+              <HabitNames />
+            </td>
+          </tr>
         </tbody>
       </Table>
     </div>
