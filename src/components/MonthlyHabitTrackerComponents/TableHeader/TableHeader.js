@@ -1,12 +1,15 @@
 import React from 'react'
-import Days from '../Days/Days'
+// import Days from '../Days/Days'
 
 const TableHeader = (props) => {
-    let daysList = <Days />
+    let daysHeaderList = []
+  for (let i = 1; i <= 31; i++) {
+    daysHeaderList.push(<th key={i}>{i}</th>)
+  }
     return (
       <>
         <th>Habits</th>
-        {daysList}
+        {daysHeaderList}
         <th>Success %</th>
       </>
   )
