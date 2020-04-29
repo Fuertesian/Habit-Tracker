@@ -6,6 +6,19 @@ import Days from '../components/MonthlyHabitTrackerComponents/Days/Days'
 import SuccessTracker from '../components/MonthlyHabitTrackerComponents/SuccessTracker/SuccessTracker'
 
 const HabitTable = (props) => {
+  function AddNewRow() {
+    return (
+      <tr>
+        <td>
+          <HabitNames />
+        </td>
+        <Days />
+        <td>
+          <SuccessTracker />
+        </td>
+      </tr>
+    )
+  }
 
   return (
     <div style={{ textAlign: 'center' }}>
@@ -25,6 +38,7 @@ const HabitTable = (props) => {
               <SuccessTracker />
             </td>
           </tr>
+          {AddNewRow()}
         </tbody>
       </Table>
     </div>
