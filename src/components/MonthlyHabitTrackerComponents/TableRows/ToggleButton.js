@@ -4,7 +4,11 @@ import React, { useState } from 'react'
 
 function ToggleButton() {
   const value = ['Empty', 'Checked', 'Not Checked']
-  const [toggle, setToggle] = useState(0)
+  let [toggle, setToggle] = useState(0)
+
+  if (toggle > 2) {
+    toggle = 0
+  }
 
   return (
     <div>
