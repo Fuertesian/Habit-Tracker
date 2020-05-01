@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
 import MonthlyHabitTracker from './containers/MonthlyHabitTracker'
-import ToggleButton from './components/MonthlyHabitTrackerComponents/TableRows/ToggleButton'
+import ClickIndex from './components/MonthlyHabitTrackerComponents/TableRows/ClickIndex'
 
 function App() {
   return (
     <div>
-      <ToggleButton />
+      <ClickIndex />
       <MonthlyHabitTracker />
     </div>
   )
