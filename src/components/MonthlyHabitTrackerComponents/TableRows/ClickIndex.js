@@ -26,10 +26,10 @@ const ClickIndex = () => {
 
   return (
     <div>
-      <button style={getIcon()} onClick={getClick}>
+      {/* <button style={getIcon()} onClick={getClick}>
         {value[clickIndex]}
-      </button>
-      {/* <td onClick ={() => setclickIndex(clickIndex + 1)}>{value[clickIndex]}</td> */}
+      </button> */}
+      <td style={getIcon}onClick ={getClick}>{value[clickIndex]}</td>
     </div>
   )
 }
